@@ -24,7 +24,11 @@ const getEtheruemContract = () => {
 export const TransactionProvider = ({ children }) => {
 
     const [currentAccount, setCurrentAccount] = useState(" ");
-    const [formData, setFormData] = useState( { addressTo: ' ', amount: ' ', keyword:' ', message: ' '} );
+    const [formData, setFormData] = useState( { addressTo: '', amount: '', keyword:'', message: ''} );
+
+    const handleChange = (e, name) => {
+        setFormData((prevstate) => ({...prevstate, [name]: e.target.value}));
+    }
 
 
     const checkIfWalletIsConnected = async () => {
@@ -35,15 +39,15 @@ export const TransactionProvider = ({ children }) => {
         const accounts = await ethereum.request({method: 'eth_accounts' })
         
         if(accounts.length) {
-            setConnectedAccount = (accounts[0]);
+            setCurrentAccount(accounts[0]);
 
         } else {
-            console.log('No Account Found')
+            console.log('No Account Found');
         }        
     } catch (error) {
-            console.log(error)
+            console.log(error);
 
-            throw new Error("No Ethereum Object") 
+            throw new Error("No Ethereum")
         }
     }
 
@@ -56,7 +60,7 @@ export const TransactionProvider = ({ children }) => {
             setCurrentAccount(accounts[0]);
             
         } catch (error) {
-            console.log(error)
+            console.log(error);
 
             throw new Error("No Ethereum Object")   
         }
@@ -64,6 +68,10 @@ export const TransactionProvider = ({ children }) => {
     const sendTransaction = async () => {
         try {
             if(!ethereum) return alert("Please install metamask");
+
+            const { addressTo, amount, keyword, message } = formData;
+
+            getEtheruemContract();
             
         } catch (error) {
 
@@ -79,7 +87,7 @@ export const TransactionProvider = ({ children }) => {
     }, []);
 
     return(
-        <TransactionsContext.Provider value={{ connectWallet, currentAccount}}>
+        <TransactionsContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction}}>
             {children}
         </TransactionsContext.Provider>
        )
