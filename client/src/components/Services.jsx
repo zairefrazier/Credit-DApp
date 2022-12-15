@@ -9,8 +9,8 @@ const ServiceCard = ({color, title, icon, Subtitle}) => (
             {icon}
         </div>
         <div className='ml-5 flex flex-col flex-1'>
-            <h1></h1>
-            <p></p>
+            <h1 className='mt-2 text-white text-lg'>{title}</h1>
+            <p className='mt-2 text-white text-sm md:w 912'>{Subtitle}</p>
 
         </div>
     </div>
