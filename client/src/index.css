@@ -61,9 +61,9 @@ body {
 }
 
 .eth-card {
-  background-color:#929292;
+  background-color:#2a55ff;
   background-image: 
-    radial-gradient(at 83% 67%, rgb(215, 215, 215) 0, transparent 58%), 
+    radial-gradient(at 83% 67%, rgb(87, 152, 206) 0, transparent 58%), 
     radial-gradient(at 67% 20%, rgb(8, 113, 129) 0, transparent 59%), 
     radial-gradient(at 88% 35%, rgb(29, 48, 156) 0, transparent 50%), 
     radial-gradient(at 31% 91%, rgb(34, 123, 146) 0, transparent 52%), 

@@ -14,7 +14,6 @@ const ServiceCard = ({color, title, icon, Subtitle}) => (
 
         </div>
     </div>
-
 )
 
 const Services = () => {
@@ -32,8 +31,20 @@ const Services = () => {
             </div>
             <div className='flex-1 flex flex-col justify-start items-center'>
             <ServiceCard
-                color="bg-[#ff0000]"
+                color="bg-[#89845F8]"
                 title="Security Guaranteed"
+                icon ={<BsShieldFillCheck fontSize={21} className="text-white" />}
+                Subtitle = "Always maintain Privacy and Quality of Service"
+                />
+                <ServiceCard
+                color="bg-[#ff0000]"
+                title="Low Exchange Rates"
+                icon ={<BsShieldFillCheck fontSize={21} className="text-white" />}
+                Subtitle = "Always maintain Privacy and Quality of Service"
+                />
+                <ServiceCard
+                color="bg-[#ff0000]"
+                title="Fast Transactions"
                 icon ={<BsShieldFillCheck fontSize={21} className="text-white" />}
                 Subtitle = "Always maintain Privacy and Quality of Service"
                 />
