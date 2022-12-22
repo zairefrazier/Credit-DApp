@@ -16,16 +16,15 @@ body {
 .gradient-bg-welcome {
   background-color:#0c45e4;
   background-image: 
-    radial-gradient(at 0% 0%, rgb(65, 90, 119) 0, transparent 50%), 
+    radial-gradient(at 0% 0%, rgb(230, 233, 237) 0, transparent 10%), 
     radial-gradient(at 50% 0%, rgb(26, 70, 203) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, rgb(224, 225, 221) 0, transparent 50%);
+    radial-gradient(at 100% 0%, rgb(224, 225, 221) 0, transparent 10%);
 }
 
 .gradient-bg-services {
   background-color:#0c45e4;
   background-image: 
-    radial-gradient(at 0% 0%, rgb(12, 69, 228) 0, transparent 50%), 
-    radial-gradient(at 50% 100%, rgb(251, 251, 251) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(12, 69, 228) 0, transparent 50%)
 }
 
 .gradient-bg-transactions {

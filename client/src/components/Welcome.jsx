@@ -95,7 +95,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <p className="text-white font-light text-sm">
-                                    "0x31415926535..."
+                                    ${currentAccount}
                                 </p>
                                 <p className="text-white font-bold text-lg mt-1">
                                     "Address"
