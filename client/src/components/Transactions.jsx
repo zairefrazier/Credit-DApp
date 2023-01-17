@@ -10,16 +10,16 @@ import { shortenAdd } from "../utils/shortenAdd";
 
 const TransactionCard = ({ addressTo, addressFrom, timestamp,message,keyword, amount, url}) => {
     return (
-        <div className="bg-[#181918] m-4 flex-1  2xl:min-w-[450px] 2xl:max-w-[500px] sm:min-w-[270px] sm:max-w-[300px] flex-col rounded-md hover:shadow-2xl">
+        <div className="bg-[#0040ff] m-4 flex-1  2xl:min-w-[450px] 2xl:max-w-[500px] sm:min-w-[270px] sm:max-w-[300px] flex-col rounded-md hover:shadow-2xl border-2 border-grey">
             <div className="flex flex-col items-center w-full mt-3"> 
             <div className="w-full mb-6 p-2">
                 <a href={"https://goerli.etherscan.io/address/"+ addressFrom} target="_blank" rel="noopener noreferrer">
-                    <p className="text-white  text-base">From: {shortenAdd(addressFrom)} </p>
+                    <p className="text-white  text-base hover:text-red-400">From: {shortenAdd(addressFrom)} </p>
                 </a>
                 <br>
                 </br>
                 <a href={"https://goerli.etherscan.io/address/"+ addressTo} target="_blank" rel="noopener noreferrer">
-                    <p className="text-white text-base"> To: {shortenAdd(addressTo)} </p>
+                    <p className="text-white text-base hover:text-red-400"> To: {shortenAdd(addressTo)} </p>
                 </a>
                 <p className="text-white text-base">Amount: {amount} ETH</p>
                 {message && (
@@ -29,9 +29,12 @@ const TransactionCard = ({ addressTo, addressFrom, timestamp,message,keyword, am
                     </p></>
                 )}
 
-
-                <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
-                    <p className="text-[#37c7da] font-bold"> {timestamp}</p>
+                    <br>
+                    </br>
+                    <br>
+                    </br>
+                <div className="bg-black p-2 px-4 w-max rounded-3xl shadow-2xl">
+                    <p className="text-white font-bold"> {timestamp}</p>
                 </div>
             </div>
             </div>
