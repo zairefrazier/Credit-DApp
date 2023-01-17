@@ -17,17 +17,12 @@ const ServiceCard = ({ color, title, icon, Subtitle}) => (
 const Services = () => {
     return (
         <div className="flex flex-col md:flex-row w-full justify-center items-center gradient-bg-services">
-            <div className="flex mf:flew-row flew-col items-center justify-between md:pd-20 py-12 px-4">
-                <div className="flex-1 flex flex-col justify-start items-start">
-                    <h1 className="text-white text-3xl sm:text-5xl py-2">
+            <div className='flex-1 flex flex-col justify-start items-center'>
+            <h1 className="text-white text-3xl sm:text-5xl py-5">
                         Improving As 
                         
                         We Grow                        
                     </h1>
-                </div>
-                
-            </div>
-            <div className='flex-1 flex flex-col justify-start items-center'>
             <ServiceCard
                 color="bg-[#ff0000]"
                 title="Security Guaranteed"
