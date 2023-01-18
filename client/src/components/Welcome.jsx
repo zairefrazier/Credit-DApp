@@ -23,15 +23,15 @@ const Input = ( { placeholder, name, type, value, handleChange } ) => (
 
 const Welcome = () => {
 
-    const { connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction } = useContext(TransactionsContext);
+    const { connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, isLoading } = useContext(TransactionsContext);
 
     const handleSubmit = (e) => {
 
-        const { addressTo, amount, keyword, message } = formData;
+        const { addressTo, amount, message } = formData;
 
         e.preventDefault();
 
-        if(!addressTo || !amount || !keyword || !message) return;
+        if(!addressTo || !amount || !message) return;
 
         sendTransaction();
     
@@ -51,7 +51,7 @@ const Welcome = () => {
                         <button
                         type="button"
                         onClick={connectWallet}
-                        className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full rounded-full cursor-pointer hover:bg-[#2546bd]">
+                        className="flex flex-row justify-center items-center my-5 bg-[#ff0000] p-3 rounded-full rounded-full cursor-pointer hover:bg-[#2546bd]">
                             <p className="text-white text-base font-semibold">
                                 Connect Wallet
                             </p>
@@ -113,11 +113,14 @@ const Welcome = () => {
                     
                     <div className="h-[1px] w-full bg-gray-400 my-2" />
 
-                    
+                        {isLoading 
+                        ?
+                            <Loader />
+                         : (
                         <button type ="button" onClick={handleSubmit} className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4fc7] rounded-full cursor-pointer hover:bg-[#2546bd]">
                             Send Now
                         </button>
-                    
+                        )}
 
                     </div>
                     

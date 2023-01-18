@@ -22,13 +22,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center flex-col mt-5'>
-                <p className='text-white text-small text-center'>Join Us</p>
-                <p className='text-white text-small text-center'>info@creditdap.com</p>
+                <p className='text-white text-sm text-center'>Join Us</p>
+                <p className='text-white text-sm text-center'>info@creditdap.com</p>
             </div>
-            <div className='sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5'/>
-            <div className='sm:w-[90%] w-full flex justify-between items-center mt-5'>
-                <p className='text-white text-small text-center'>HARD COPY LLC </p>
-                <p className='text-white text-small text-center'>All Right Reserved</p>
+            <div className='sm:w-[100%] w-full h-[0.25px] bg-gray-400 mt-5'/>
+            <div className='w-full flex justify-between items-center mt-3'>
+                <p className='text-white text-sm text-center'>HARD COPY LLC </p>
+                <p className='text-white text-sm text-center'>All Right Reserved</p>
             </div>
         </div>
     );

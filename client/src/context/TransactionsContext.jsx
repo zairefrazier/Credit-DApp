@@ -26,7 +26,7 @@ export const TransactionProvider = ({ children }) => {
 
     const [transactionCount, setTransactionCount] = useState(localStorage.getItem('transactionCount'));
 
-    const [ transaction, setTransactions] = useState([]);
+    const [ transactions, setTransactions] = useState([]);
 
     const handleChange = (e, name) => {
         setFormData((prevstate) => ({...prevstate, [name]: e.target.value}));
@@ -39,12 +39,12 @@ export const TransactionProvider = ({ children }) => {
             const availableTransactions = await transactionContract.getAllTransactions();
             
 
-            const structuredTransactions = availableTransactions.map((transaction) => ({
-                addressTo: transaction.receiver,
-                addressfrom: transaction.sender,
-                timestamp: new Date(transaction.timestamp.toNumber() * 1000),
-                message: transaction.message,
-                amount: parseInt(transaction.amount._hex) * (10 ** 18)
+            const structuredTransactions = availableTransactions.map((transactions) => ({
+                addressTo: transactions.receiver,
+                addressFrom: transactions.sender,
+                timestamp: new Date(transactions.timeststamp.toNumber() * 1000).toLocaleString(),
+                message: transactions.message,
+                amount: parseInt(transactions.amount._hex) / (10 ** 18)
             }))
 
             console.log(structuredTransactions)
@@ -52,7 +52,7 @@ export const TransactionProvider = ({ children }) => {
 
             
         } catch (error) {
-            console.log(error)
+            console.log("here")
             
         }
     }
@@ -158,7 +158,7 @@ export const TransactionProvider = ({ children }) => {
     }, []);
 
     return(
-        <TransactionsContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction}}>
+        <TransactionsContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, transactions, isLoading}}>
             {children}
         </TransactionsContext.Provider>
        )
