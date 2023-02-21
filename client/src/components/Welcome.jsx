@@ -9,7 +9,7 @@ import { shortenAdd } from "../utils/shortenAdd";
 
 
 
-const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-blue-400 text-sm font-light text-black";
+const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-blue-400 text-sm font-light text-white";
 
 const Input = ( { placeholder, name, type, value, handleChange } ) => (
     <input
@@ -62,22 +62,22 @@ const Welcome = () => {
                     )}
                     
                     <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10 text-black">
-                        <div className={`rounded-tl-2xl ${commonStyles} text-black`}>
+                        <div className={`rounded-tl-2xl ${commonStyles}`}>
                         Reliability
                         </div>
                         <div className={commonStyles}>
                         Blockchain
                         </div>
-                        <div className={`rounded-tr-2xl ${commonStyles} text-black`}>
+                        <div className={`rounded-tr-2xl ${commonStyles}`}>
                         Fantom
                         </div>
-                        <div className={`rounded-bl-2xl ${commonStyles} text-black`}>
+                        <div className={`rounded-bl-2xl ${commonStyles}`}>
                         Security
                         </div>
                         <div className={commonStyles}>
                             Web 3.0
                         </div>
-                        <div className={`rounded-br-2xl ${commonStyles} text-black`}>
+                        <div className={`rounded-br-2xl ${commonStyles}`}>
                         Ethereum
                         </div>
 

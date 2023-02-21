@@ -11,7 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Wave-33.3s-1939px.svg");
+  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Waves-2.png");
   
 }
 
@@ -23,7 +23,7 @@ body {
     radial-gradient(at 100% 0%, rgb(224, 225, 221) 0, transparent 10%);
 }
 .svg-bg {
-  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Wave-33.3s-1939px.svg")
+  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Waves-2.png")
 }
 .gradient-bg-services {
   background-color:#0884fc;
