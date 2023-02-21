@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <div className="flex flex-col md:flex-row w-full justify-center items-center gradient-bg-services">
             <div className='flex-1 flex flex-col justify-start items-center'>
-            <h1 className="text-white text-3xl sm:text-5xl py-5">
+            <h1 className="text-black text-3xl sm:text-5xl py-5">
                         Improving As 
                         
                         We Grow                        

@@ -9,7 +9,7 @@ import { shortenAdd } from "../utils/shortenAdd";
 
 
 
-const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
+const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-blue-400 text-sm font-light text-black";
 
 const Input = ( { placeholder, name, type, value, handleChange } ) => (
     <input
@@ -43,10 +43,10 @@ const Welcome = () => {
         <div className="flex w-full justify-center items-center">
             <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
                 <div className="flex flex-1 justify-start flex-col mf:mr-10">
-                    <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
+                    <h1 className="text-3xl sm:text-5xl text-black py-1">
                         Send Cryto <br /> To Anyone, Anywhere
                     </h1>
-                    <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+                    <p className="text-left mt-5 text-black font-light md:w-9/12 w-11/12 text-base">
                         Explore Crypto, With Credit Dap
                     </p>
                     {currentAccount && (
@@ -61,23 +61,23 @@ const Welcome = () => {
 
                     )}
                     
-                    <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-                        <div className={`rounded-tl-2xl ${commonStyles}`}>
+                    <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10 text-black">
+                        <div className={`rounded-tl-2xl ${commonStyles} text-black`}>
                         Reliability
                         </div>
                         <div className={commonStyles}>
                         Blockchain
                         </div>
-                        <div className={`rounded-tr-2xl ${commonStyles}`}>
+                        <div className={`rounded-tr-2xl ${commonStyles} text-black`}>
                         Fantom
                         </div>
-                        <div className={`rounded-bl-2xl ${commonStyles}`}>
+                        <div className={`rounded-bl-2xl ${commonStyles} text-black`}>
                         Security
                         </div>
                         <div className={commonStyles}>
                             Web 3.0
                         </div>
-                        <div className={`rounded-br-2xl ${commonStyles}`}>
+                        <div className={`rounded-br-2xl ${commonStyles} text-black`}>
                         Ethereum
                         </div>
 

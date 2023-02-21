@@ -40,3 +40,11 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Wave-33.3s-1939px.svg");
+  
+}

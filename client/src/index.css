@@ -11,6 +11,8 @@ body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Wave-33.3s-1939px.svg");
+  
 }
 
 .gradient-bg-welcome {
@@ -20,17 +22,15 @@ body {
     radial-gradient(at 50% 0%, rgb(26, 70, 203) 0, transparent 50%), 
     radial-gradient(at 100% 0%, rgb(224, 225, 221) 0, transparent 10%);
 }
-
+.svg-bg {
+  background-image: url("/Users/zairefrazier/Desktop/Credit Dap/client/images/Wave-33.3s-1939px.svg")
+}
 .gradient-bg-services {
-  background-color:#0c45e4;
-  background-image: 
-    radial-gradient(at 0% 0%, rgb(12, 69, 228) 0, transparent 50%)
+  background-color:#0884fc;
 }
 
 .gradient-bg-transactions {
-  background-color:#0c45e4;
-  background-image: 
-    radial-gradient(at 0% 0%, rgb(12, 69, 228) 0, transparent 50%)
+  background-color:#0884fc;
 }
 
 .gradient-bg-footer {
@@ -76,7 +76,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.svg-bg {
+  
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
