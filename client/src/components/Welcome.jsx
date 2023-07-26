@@ -105,7 +105,6 @@ const Welcome = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
                     <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
                     <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />
