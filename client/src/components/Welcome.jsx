@@ -102,10 +102,8 @@ const Welcome = () => {
                                 <p className="text-white font-bold text-lg mt-1">
                                     Ethereum
                                 </p>
-
                             </div>
                         </div>
-
                     </div>
 
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
